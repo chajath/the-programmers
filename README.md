@@ -26,8 +26,7 @@
 
 커맨드로 pdf 파일을 컴파일 할 수 있습니다.
 
-TODO
-====
+읽기
+==
 
-* Makefile에 pdf 파일을 publish 하는 기능 추가하기.
-* 웹사이트 추가하기.
+http://blip.asia/the-programmers/ 에서 최신 버젼을 바로 읽을 수 있습니다.
