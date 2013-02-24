@@ -8,9 +8,9 @@
 
 ## 요구사항
 
-소스 화일을 빌드 하려면 XeLaTeX 와 screenplay 클래스가 설치되어 있어야 합니다. 한글 폰트로는 나눔고딕체와 은그래픽 글꼴이 필요합니다. 나눔고딕체를 제외하고는 우분투의 repository에서 설치할 수 있습니다.
+소스 화일을 빌드 하려면 LaTeX 빌드 시스템 rubber, XeLaTeX 와 screenplay 클래스가 설치되어 있어야 합니다. 한글 폰트로는 나눔고딕체와 은그래픽 글꼴이 필요합니다. 나눔고딕체를 제외하고는 우분투의 repository에서 설치할 수 있습니다.
 
-    sudo apt-get install texlive-xetex texlive-humanities ttf-unfonts-extra
+    sudo apt-get install rubber texlive-xetex texlive-humanities ttf-unfonts-extra
 
 나눔고딕체는 다음과 같이 ppa를 추가해 설치합니다.
 
