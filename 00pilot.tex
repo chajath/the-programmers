@@ -4,7 +4,10 @@
 \usepackage{xltxtra,fontspec,xunicode}
 \setmainfont{NanumGothic}
 \setmonofont{UnGraphic}
-
+\let\oldMakeUppercase\MakeUppercase
+\renewcommand\MakeUppercase[1]{
+    {\oldMakeUppercase{\underline{#1}}}
+}
 \title{프로그래머들 (The Programmers) -- Pilot}
 
 \author{이인호}
@@ -151,7 +154,7 @@ chajath@gmail.com
         \paren{절망하며}
         V.O. 나는 끝났구나. 저놈이 기어코 나를 말로 죽이는구나.
     \end{dialogue}
-    \intextslug[DAY]{사방이 모두 하얀 공간}
+    \extslug[DAY]{사방이 모두 하얀 공간}
     
     멀리서 흰 옷을 걸친 흑인이 다가오는 모습이 뿌옇게 비친다.
     \begin{dialogue}[모든것을 초탈한 사람처럼 미소를 지으며]{김석호}
@@ -190,7 +193,13 @@ chajath@gmail.com
         양자역학에서 다세계 해석을 말씀하시는 거요?
     \end{dialogue}
     
-    화면에 두 개의 세계가 나타난다. 두 세계 실험실에서 슈뢰딩거가 상자를 열고 있다. 한쪽에서는 상자 안에서 고양이가 살아서 나오고 슈뢰딩거가 기뻐하며 고양이를 품는다. 다른 쪽에서는 상자 안을 쳐다본 슈뢰딩거가 슬픔에 잠기며 주저앉는다. 잠시 후 두 개의 세계가 화면에서 사라진다.
+    화면에 
+    
+    \slug{두 개의 세계}{}{}
+    
+    가 나타난다. 두 세계 실험실에서 슈뢰딩거가 상자를 열고 있다. 한쪽에서는 상자 안에서 고양이가 살아서 나오고 슈뢰딩거가 기뻐하며 고양이를 품는다. 다른 쪽에서는 상자 안을 쳐다본 슈뢰딩거가 슬픔에 잠기며 주저앉는다. 잠시 후 두 개의 세계가 화면에서 사라진다.
+    
+    \slug{다시 흰 공간}{}{}
     
     \begin{dialogue}{김석호}
         아... 파동함수는 붕괴하는 게 아니었구나...
@@ -214,7 +223,7 @@ chajath@gmail.com
     
     \fadein
     
-    \intslug[DAY]{GNU 판타지 랜드}
+    \extslug[DAY]{GNU 판타지 랜드}
     
     GNU 판타지 랜드의 전경이 펼쳐진다. 잔디 동산 위로 푸른 하늘이 펼쳐진다. 평화로운 전경이 다소 동화적이다. 리쳐드 스톨먼이 노트북으로 작업에 몰두하고 있다. 김석호가 판타지 랜드에 갑작스레 나타난다. 리쳐드 스톨먼이 김석호 쪽으로 다가온다.
     
@@ -253,11 +262,15 @@ chajath@gmail.com
         흠... 잠시만 어디 문자 보낼께 있어서
     \end{dialogue}
     
+    \slug{스톨먼의 전화기}{}{}
+    
     리처드 스톨먼이 전화기를 조작하자 화면에 emacs 가 뜬다.
     
     \begin{dialogue}{김석호}
         V.O. 스마트폰에 Hurd 가 돌아가고 문자를 보내는데 emacs 를 쓰다니. 아, 여기가... 여기가 천국이구나. 오... 신이시여...
     \end{dialogue}
+    
+    \slug{다시 GNU판타지랜드}{}{}
     
     리처드 스톨먼은 한참 전화기를 조작하고 나서 전화기를 김석호에게 건낸다.
     
